@@ -2,7 +2,7 @@ name: 同步上游主分支
 
 on:
   schedule:
-    - cron: '0 2 * * *' # 每天UTC凌晨2点
+    - cron: '0 2 * * 3' # 每天UTC凌晨2点
   workflow_dispatch:
 
 jobs:
