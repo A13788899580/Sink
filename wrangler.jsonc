@@ -4,7 +4,8 @@
   "main": "dist/server/index.mjs",
   "assets": {
     "binding": "ASSETS",
-    "directory": "dist/public"
+    "directory": "dist/public",
+    "html_handling": "drop-trailing-slash"
   },
   "compatibility_date": "2025-05-08",
   "compatibility_flags": [
@@ -12,8 +13,17 @@
   ],
   "keep_vars": true,
   "upload_source_maps": true,
+  "observability": {
+    "logs": {
+      "enabled": true
+    },
+    "traces": {
+      "enabled": true
+    }
+  },
   "ai": {
-    "binding": "AI"
+    "binding": "AI",
+    "remote": true
   },
   "analytics_engine_datasets": [
     {
@@ -24,7 +34,7 @@
   "kv_namespaces": [
     {
       "binding": "KV",
-      "id": "b754e0f074724e1ba2663a5bd594ac3d" // IMPORTANT: Change this to your KV namespace ID
+      "id": "b754e0f074724e1ba2663a5bd594ac3d"
     }
   ]
 }
